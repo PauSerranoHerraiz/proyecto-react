@@ -1,15 +1,25 @@
 
 import './App.css'
+import Footer from './components/Footer'
+import NavBar from './components/NavBar'
+import SideBar from './components/SideBar'
+
+
 
 function App() {
 
 
   return (
-    <>
-    
-      <h1>Vite + React</h1>
-   
-    </>
+    <div className='box'>
+      <NavBar /> 
+
+      <h1>Proyecto React</h1>
+
+      <SideBar />
+      <br />
+
+      <Footer />
+    </div>
   )
 }
 
