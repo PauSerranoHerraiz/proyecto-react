@@ -1,10 +1,12 @@
-function SideBar(){
+function SideBar() {
     return (
-        <>
-        <a href="">Home</a>
-        <br />
-        <a href="">About</a>
-        </>
+        <aside className="sidebar">
+        <ul>
+            <li> <a href="">Home</a></li>
+
+            <li><a href="">About</a></li>
+        </ul>
+        </aside>
     )
 }
 

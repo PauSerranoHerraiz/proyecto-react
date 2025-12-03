@@ -24,10 +24,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
 }
 
 h1 {
@@ -52,4 +49,93 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  min-height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+}
+
+.navBar {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  justify-content:space-around;
+  align-items:normal;
+  width: 100%;
+}
+
+.navBar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px
+}
+
+.navBar ul li {
+  font-weight: 600;
+}
+
+
+
+
+h1 {
+  color: black;
+  padding: 10px;
+}
+
+
+.side {
+  display: flex;
+  width: 100%;
+}
+
+
+.sidebar {
+  width: 200px;
+  background-color: burlywood;
+  padding: 20px;
+  min-height: 80vh; 
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+}
+
+
+.sidebar ul li {
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  font-weight: bold;
+}
+
+
+.content {
+  padding: 20px;
+            
+}
+
+.footer{
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.items {
+  color: black;
+  font-size: 20px;
+  border: 1px solid black;
 }
