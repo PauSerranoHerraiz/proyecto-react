@@ -17,15 +17,10 @@ function App() {
 
 
   const deleteItem = (itemId) => {
-    const newList = itemsToDisplay.filter((element) => {
-      if (element.id !== itemId) {
-        return true
-      }
-      else {
-        return false
-      }
+    const newList = productsToDisplay.filter((element) => {
+      return element.id !== parseInt(itemId)
     })
-    setItemsToDisplay(newList)
+    setProductsToDisplay(newList)
   }
 
 
@@ -40,7 +35,7 @@ function App() {
         <SideBar />
         <div className="content">
           <Routes>
-            <Route path='/' element={<ProductList productsArr={productsToDisplay} />} />
+            <Route path='/' element={<ProductList productsArr={productsToDisplay} deleteItem={deleteItem} />} />
             <Route path="/about" element={<About />} />
             <Route path="/product/:productId" element={<ProductDetails productsArr={productsToDisplay} />} />
             <Route path="*" element={<h1>Page not found</h1>} />
@@ -57,6 +52,6 @@ function App() {
     </div>
 
   )
-}
 
+}
 export default App

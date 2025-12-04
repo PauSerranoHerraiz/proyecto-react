@@ -1,5 +1,4 @@
 
-import { Link } from "react-router-dom"
 import ProductCard from "../pages/ProductCard"
 
 function ProductList(props) {
@@ -10,9 +9,16 @@ function ProductList(props) {
         <>
             {props.productsArr.map((element) => {
                 return (
-                    <ProductCard />
+                    <ProductCard className="product"
+                        key={element.id}
+                        id={element.id}
+                        title={element.title}
+                        stock={element.stock}
+                        deleteItem={props.deleteItem}
+                    />
                 )
             })}
+
         </>
     )
 }

@@ -1,7 +1,17 @@
+import { Link } from "react-router-dom"
+
 
 function ProductCard(props) {
     return (
-        <h1>hello world</h1>
+        <div key={props.id} className="items">
+            <p >{props.stock > 0 ? props.title + " ✅ " : props.title + " ❌"}</p>
+
+            <button onClick={() => { props.deleteItem(props.id) }}>delete</button>
+            <Link to={`/product/${props.id}`}>
+                <button>More Details</button>
+            </Link>
+
+        </div>
     )
 }
 
@@ -9,15 +19,3 @@ export default ProductCard
 
 
 
-{/*
-<div key={element.id} className="items">
-    <p >{element.stock > 0 ? element.title + " ✅ " : element.title + " ❌"}</p>
-
-    <button onClick={() => { deleteItem(element.id) }}>delete</button>
-    <Link to={`/movies/${props.movieDetails.id}`}>
-        <button>More Details</button>
-    </Link>
-    
-</div>
-
-*/}
