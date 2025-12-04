@@ -140,6 +140,7 @@ h1 {
 .items {
   color: black;
   font-size: 20px;
+  text-align: center;
   padding: 20px;
   border: 1px solid black;
   margin: 2px;
@@ -148,4 +149,8 @@ h1 {
 
 .product{
   color: black;
+}
+
+.productImg{
+  width: 300px;
 }

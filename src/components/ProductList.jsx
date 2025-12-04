@@ -13,6 +13,7 @@ function ProductList(props) {
                         key={element.id}
                         id={element.id}
                         title={element.title}
+                        thumbnail={element.thumbnail}
                         stock={element.stock}
                         deleteItem={props.deleteItem}
                     />
