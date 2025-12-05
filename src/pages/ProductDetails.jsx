@@ -18,7 +18,7 @@ function ProductDetails(props) {
             <p>{product.description}</p>
 
             <p>
-                <Link to="/" className="btn btn-primary">Back</Link>
+                <Link to="/" className="btn btn-primary"><button>Back</button></Link>
             </p>
         </>
     )
