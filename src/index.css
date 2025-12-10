@@ -42,7 +42,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #6C72FA;
+  background-color: #F9AB55;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -62,24 +62,23 @@ html, body, #root {
 
 .box {
   min-height: 100vh;
-  background-color: antiquewhite;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
 
 .navBar {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   color: black;
   display: flex;
-  justify-content:space-between;
-  align-items:normal;
+  justify-content:center;
+  align-items:center;
   width: 100%;
 }
 
 .navBar ul {
   list-style: none;
-  display: flex;
-  gap: 550px;
+
 }
 
 .navBar ul li {
@@ -90,7 +89,7 @@ html, body, #root {
 
 
 h1 {
-  color: black;
+  color: #1C1D21;
   padding: 10px;
 }
 
@@ -103,7 +102,7 @@ h1 {
 
 .sidebar {
   width: 200px;
-  background-color: burlywood;
+  background-color: white;
   padding: 20px;
   min-height: 80vh; 
 }
@@ -128,7 +127,7 @@ h1 {
 
 .content {
   padding: 20px;
-  color: black;
+  color: #1C1D21;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
             
 }
@@ -140,19 +139,51 @@ h1 {
 }
 
 .items {
-  color: black;
+  color: #1C1D21;
   font-size: 20px;
   text-align: center;
   padding: 20px;
-  border: 1px solid black;
+  border: 2px solid #1C1D21;
   margin: 2px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .product{
-  color: black;
+  color: #1C1D21;
 }
 
 .productImg{
   width: 300px;
 }
+
+input {
+  background-color: #F7F5FB;
+  color: #242424;
+  font-size: 15px;
+  font-weight: 300px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 16px 24px;
+  width: 90%;
+  height: 15%;
+  left: 1048px;
+  top: 16px;
+  background: #FFFFFF;
+  border: 2px solid #1B1B1B
+}
+
+textarea:focus, input:focus{
+  outline: none;
+  background: #F9E450;
+  border: 3px solid #1B1B1B;
+  border-radius: 12px;
+}
+
+label {
+  font-weight: 600;
+}
+
