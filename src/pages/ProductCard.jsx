@@ -13,6 +13,8 @@ function ProductCard(props) {
                 <button>More Details</button>
             </Link>
 
+            <Link to={`/product/edit/${props.id}`}><button>Edit</button> </Link>
+
         </div>
     )
 }
