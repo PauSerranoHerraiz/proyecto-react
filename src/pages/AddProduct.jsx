@@ -7,6 +7,7 @@ function AddProduct(props) {
     const [price, setPrice] = useState("")
     const [rating, setRating] = useState("")
     const [imageUrl, setImageUrl] = useState("")
+    const [stock, setStock] = useState("")
 
     const navigate = useNavigate()
 
@@ -20,7 +21,8 @@ function AddProduct(props) {
             title: product,
             price: price,
             rating: rating,
-            thumbnail: imageUrl
+            thumbnail: imageUrl,
+            stock: stock
         }
 
         props.onCreate(newProduct) 
@@ -76,6 +78,18 @@ function AddProduct(props) {
                         onChange={(e) => { setRating(e.target.value) }}
                     />
                 </label>
+
+                <label>
+                        Stock:
+                        <input
+                            type="number"
+                            name="stock"
+                            placeholder="50"
+                            min={0}
+                            value={stock}
+                            onChange={(e) => { setStock(e.target.value) }}
+                        />
+                    </label>
 
                 <label>
                     Image URL:
